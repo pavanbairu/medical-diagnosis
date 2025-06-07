@@ -14,7 +14,7 @@ if st.button("Get Diagnosis"):
 
     try:
         response = requests.post(
-            "http://localhost:8000/diagnosis/invoke",
+            "https://medical-diagnosis-ujtl.onrender.com/diagnosis/invoke",
             headers={"Content-Type": "application/json"},
             json={"input": state_input}  # ✅ wrap state in "input"
         )
